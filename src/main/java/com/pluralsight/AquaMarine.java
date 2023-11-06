@@ -1,6 +1,15 @@
 package com.pluralsight;
 
 public class AquaMarine extends Vehicle {
+    public AquaMarine(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity, boolean isPublic, boolean isAbove, boolean isBelow) {
+        super(color, numberOfPassengers, cargoCapacity, fuelCapacity, isPublic);
+        this.isAbove = isAbove;
+        this.isBelow = isBelow;
+    }
+
+    public AquaMarine (){
+        super();
+    }
     private boolean isAbove;
     private boolean isBelow;
 

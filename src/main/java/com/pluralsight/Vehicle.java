@@ -9,9 +9,19 @@ public class Vehicle {
         return isPublic;
     }
 
+    public Vehicle(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity, boolean isPublic) {
+        this.color = color;
+        this.numberOfPassengers = numberOfPassengers;
+        this.cargoCapacity = cargoCapacity;
+        this.fuelCapacity = fuelCapacity;
+        this.isPublic = isPublic;
+    }
+
     public void setPublic(boolean aPublic) {
         isPublic = aPublic;
     }
+
+    public Vehicle() {}
 
     public String getColor() {
         return color;
